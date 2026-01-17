@@ -74,8 +74,8 @@ If you like this project, give it a star and feel free to improve it!
 
 **Home Page**  
 
-![Home Page](images/menu.png)
+![Home Page](photos/menu.png)
 
 **Footer Page** 
 
-![Gallery Page](images/Footer.png)
+![Gallery Page](photos/Footer.png)
