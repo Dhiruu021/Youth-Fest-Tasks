@@ -3,74 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOUWOHUM 2025</title>
+    <title>YOUWOHUM 2026</title>
     <style>
-         body{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color:rgb(195, 192, 192);
-         }
-         .moving{
-            background-color:rgb(107, 105, 105);
-            height: 70px;
-         }
+       body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
 
-         .college{
-            margin-left: 550px;
-            align-content: center;
-         }
-       .logo{
-                  position: absolute;
-                  left: 350px;
-                  top: 30px;
-       }
-       .logo1{
-                 position: absolute;
-                  left: 1150px;
-                  top: 30px;
-       }
-        .grids{
-            margin-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            .grid{
-                background-color: rgb(107, 105, 105);
-                margin-bottom: 40px;
-                width: 300px;
-                height: 200px;
-                border-radius:20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid black;
-                object-fit: cover;
-                img{
-                    
-                    width: 100%;
-                    height: 100%;
-                    object-position: center;
-                    object-fit: cover;
-                    border-radius: 15px;
-                }
-            }
-        }
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.college {
+  text-align: center;
+  flex: 1;
+}
+
+.college h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.college h2 {
+  margin: 5px 0 0;
+  font-size: 18px;
+  color: #fce4ec;
+}
+
+/* Logos */
+.logo img,
+.logo1 img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  color: #ffd369;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.navbar ul li a:hover {
+  background: #ff9f1c;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 159, 28, 0.7);
+}
+
+
+/* Moving Bar */
+.moving {
+  background: linear-gradient(90deg, #794738, #6f314d);
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+/*  font-weight: bold;*/
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Event Section */
+.event h1 {
+  margin-left: 30px;
+  color: #ffcc70;
+}
+
+/* Info Box */
+ul p {
+  margin: 20px 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  line-height: 1.7;
+  color: #f5f5f5;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #ffd369;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ff9f1c;
+}
+
+/* Grid Section */
+.grids {
+  margin: 40px auto;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.grid {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  width: 300px;
+  height: 230px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.grid:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(255, 80, 150, 0.6);
+}
+
+.grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.grid h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ffcc70;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* About Section */
+ul h1 {
+  margin-left: 30px;
+  color: #ff9f1c;
+  font-size: 28px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .college h1 {
+    font-size: 24px;
+  }
+
+  .grid {
+    width: 90%;
+  }
+}
+
+.footer {
+  background: linear-gradient(135deg, #36363c, #3f3c3e);
+  padding: 35px 20px;
+  text-align: center;
+  margin-top: 60px;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.4);
+}
+
+.footer-content h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  color: #fce4ec;
+  font-size: 15px;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #eee;
+  margin-top: 15px;
+}
+
+
+
         
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="download.jpeg"height="100"width="100" > 
-    </div>
-    <div class="logo1">
-        <img src="download.png"height="100"width="100">
-    </div>
-    <div class="college">
+  <div class="header">
+  <div class="logo">
+    <img src="download.jpeg" alt="Logo Left">
+  </div>
 
+  <div class="college">
     <h1>Goel Institute Of Higher Studies</h1>
-    <h2>Faizabad Road,Lucknow (U.P) 226028</h2>
-    </div>
+    <h2>Faizabad Road, Lucknow (U.P) 226028</h2>
+  </div>
+
+  <div class="logo1">
+    <img src="download.png" alt="Logo Right">
+  </div>
+</div>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 
     <div>
@@ -91,7 +272,7 @@
                📍 Venue: [GITM College], [Faizabad Road,Lucknow]
                </a>
                <br>
-                📅 Date: [22/02/2025]<br>
+                📅 Date: [22/02/2026]<br>
                 ⏰ Time: [Start Time-03:30pm]  [End Time-09:00pm]
             
                 </p>
@@ -159,14 +340,27 @@
         <h1>About the Fest :</h1>
         <p>🌟 Get Ready for the Ultimate College Fest! 🎉 🌟
 
-            Attention all students! The most awaited event of the year is finally here – [Goel Insitute Of Higher Studies] Fest 2025! 
+            Attention all students! The most awaited event of the year is finally here – [Goel Insitute Of Higher Studies] Fest 2026! 
             <br>Get ready for an electrifying experience filled with music, dance, competitions, and unlimited fun! 🎶💃🔥
             
             Join us for an unforgettable celebration where talent meets enthusiasm.
             <br> Whether you’re a performer, a tech wizard, a gamer, or just someone who loves a good time, there’s something for everyone! 🎭🎸🎮<br>
-            We are pleased to invite you to GIHSM Fest 2025, an event designed to bring students together for a range of engaging activities, competitions,<br> and entertainment. This annual fest serves as a platform for students to showcase their skills, interact with peers, and enjoy a memorable experience.
+            We are pleased to invite you to GIHSM Fest 2026, an event designed to bring students together for a range of engaging activities, competitions,<br> and entertainment. This annual fest serves as a platform for students to showcase their skills, interact with peers, and enjoy a memorable experience.
             <br>
             <br>
     </ul>
+
+    <footer class="footer">
+  <div class="footer-content">
+    <h2>Goel Institute Of Higher Studies</h2>
+    <p>Faizabad Road, Lucknow (U.P) 226028</p>
+
+    <p class="copyright">
+      © 2026 GIHSM Youth Fest | Designed by Dhiru singh 💻
+    </p>
+  </div>
+</footer>
+
+
 </body>
 </html>
